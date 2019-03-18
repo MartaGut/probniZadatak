@@ -1,0 +1,227 @@
+@font-face {
+  font-family: museosans500;
+  src: url(../fonts/museosans_500-webfont.ttf); }
+
+@font-face {
+  font-family: museosans700;
+  src: url(../fonts/museosans_700-webfont.ttf); }
+
+@font-face {
+  font-family: museosans900;
+  src: url(../fonts/museosans_900-webfont.ttf); }
+
+@font-face {
+  font-family: museosans100;
+  src: url(../fonts/museosans-100-webfont.ttf); }
+
+@font-face {
+  font-family: museosans300;
+  src: url(../fonts/museosans-300-webfont.ttf); }
+
+body {
+  margin: 0px; }
+
+* {
+  box-sizing: border-box; }
+
+nav {
+  margin-bottom: 0px;
+  padding: 46px 170px; }
+
+ul.navigation {
+  list-style-type: none;
+  padding-bottom: 20px; }
+
+#logo {
+  width: 200px;
+  float: left;
+  margin-top: -30px; }
+
+a.navLink {
+  float: right;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  padding-bottom: 40px;
+  cursor: pointer;
+  font-family: museosans700;
+  font-size: 15px; }
+
+a.navLink:hover {
+  color: gray;
+  border-bottom: 5px solid gray;
+  cursor: pointer; }
+
+a.active {
+  border-bottom: 5px solid #0050ff; }
+
+header {
+  margin: 0px;
+  background-image: url("../img/bigImageFilter.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 860px;
+  background-position: center;
+  position: relative; }
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.headerText {
+  color: white;
+  font-family: museosans100;
+  font-size: 40px;
+  line-height: 60px; }
+
+.signUp {
+  background-color: #004ffb;
+  border: none;
+  padding: 15px;
+  border-radius: 30px;
+  color: white;
+  transition: 0.5s;
+  font-family: museosans700; }
+
+.signUp:hover {
+  background-color: white;
+  color: #004ffb;
+  cursor: pointer; }
+
+.content, .news {
+  padding: 80px 170px;
+  font-family: museosans300; }
+
+.pageHeading {
+  font-size: 40px; }
+
+.content a {
+  text-decoration: none;
+  color: #004ffb;
+  cursor: pointer; }
+
+.list {
+  list-style-type: circle;
+  padding-left: 15px;
+  padding-bottom: 20px; }
+
+.slide {
+  position: relative; }
+
+.next, .previous {
+  position: absolute;
+  top: 50%;
+  text-decoration: none;
+  border: 3px solid white;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  padding: 8px 16px;
+  font-weight: bold;
+  color: white;
+  transition: 0.5s ease; }
+
+.previous {
+  left: 170px; }
+
+.next:hover, .previous:hover {
+  font-weight: 400;
+  border: 5px solid white;
+  color: grey; }
+
+.next {
+  right: 170px; }
+
+.slideText {
+  text-align: center;
+  padding: 300px 170px;
+  height: 800px; }
+
+.contactUs {
+  background-color: #0050ff;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s; }
+
+.contactUs:hover {
+  padding: 15px; }
+
+.oneBlock {
+  float: left;
+  width: 33%;
+  padding: 10px; }
+
+.newsPic {
+  width: 100%; }
+
+.blocks::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.seeAll {
+  background-color: white;
+  border: 2px solid #0050ff;
+  padding: 10px;
+  border-radius: 30px;
+  color: #0050ff;
+  cursor: pointer;
+  transition: 0.5s; }
+
+.seeAll:hover {
+  color: white;
+  background-color: #0050ff; }
+
+.month {
+  color: #5a6373;
+  font-size: 15px; }
+
+.newsTitle {
+  font-size: 20px; }
+
+.line {
+  background-color: yellow;
+  height: 40px;
+  width: 100%;
+  border-top: 0.5px solid grey;
+  border-bottom: 1px solid grey;
+  margin-bottom: 5px; }
+
+a {
+  text-decoration: none; }
+
+footer {
+  padding: 0 170px; }
+
+ul.foot {
+  list-style-type: none;
+  padding-bottom: 20px; }
+
+.copyright {
+  float: left;
+  font-size: 12px; }
+
+li.mediaButt {
+  float: right;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  margin-top: -10px; }
+
+.mediaButt img {
+  width: 15px;
+  height: 15px;
+  transition: 0.5s; }
+
+.mediaButt img:hover {
+  width: 17px;
+  height: 17px; }
