@@ -7,6 +7,7 @@
   <title>Probni Zadatak</title>
   <meta name="description" content="Probni Zadatak">
   <meta name="author" content="Marta Gut">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css\style.css">
 
@@ -20,7 +21,7 @@
           <a href=# class="navLink">Pricing</a>
           <a href=# class="navLink">About</a>
           <a href=# class="navLink active">What we do</a>
-          <a href=# class="navLink hamburger" onclick="toggle()"><img class="hamburgerImg" src="img/hamburger.gif" alt="Menu Button" ></a>
+          <a href=# class="hamburger" onclick="toggle()"><img class="hamburgerImg" src="img/hamburger.gif" alt="Menu Button" ></a>
       </div>
   </nav>
 
@@ -72,30 +73,30 @@
     <div class="background fade" style="background-image: url(img/background1.jpg)">
       <div class="slideText">
           <h1>Itaque earum rerum hic tenetur</h1>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti</p>
-          <button class="contactUs">Contact us &nbsp;&nbsp;&nbsp; &#10095;</button>
+          <p id="noDisplay5">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti</p>
+          <button id="noDisplay6" class="contactUs">Contact us &nbsp;&nbsp;&nbsp; &#10095;</button>
       </div>
     </div>
 
     <div class="background fade" style="background-image: url(img/background2.jpg)">
       <div class="slideText">
             <h1>Nam libero tempore, cum soluta </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in urna quis neque porttitor sagittis.</p>
-            <button class="contactUs">Contact us &nbsp;&nbsp;&nbsp; &#10095;</button>
+            <p id="noDisplay1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in urna quis neque porttitor sagittis.</p>
+            <button id="noDisplay2" class="contactUs">Contact us &nbsp;&nbsp;&nbsp; &#10095;</button>
       </div>
       </div>
 
       <div class="background fade" style="background-image: url(img/background3.jpg)">
       <div class="slideText">
             <h1>Itaque earum rerum hic tenetur</h1>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-            <button class="contactUs">Contact us &nbsp;&nbsp;&nbsp; &#10095;</button>
+            <p id="noDisplay3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            <button id="noDisplay4" class="contactUs">Contact us &nbsp;&nbsp;&nbsp; &#10095;</button>
       </div>
       </div>
 
 
-      <a href=javascript:void() onclick="plusSlide(1)"><img src="img/Left.gif" alt="next" class="next"></a>
-      <a href=javascript:void() onclick="plusSlide(-1)"><img src="img/right.gif" alt="previous" class="previous" ></a>
+      <a href=javascript:void(0) onclick="plusSlide(1)"><img src="img/Left.gif" alt="next" class="next"></a>
+      <a href=javascript:void(0) onclick="plusSlide(-1)"><img src="img/right.gif" alt="previous" class="previous" ></a>
     </div>
   </section>
 
@@ -105,19 +106,28 @@
 
       <div class="blocks">
           <div class="oneBlock">
-              <img src="img/bridge.jpg" class="newsPic">
+              <picture>
+                <source srcset="img/bridgeMobile.jpg" media="(max-width: 300px)">
+                <img src="img/bridge.jpg" class="newsPic">
+              </picture>
               <p class="month">March</p>
               <p class="newsTitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
-          </div>          
+          </div>    
 
             <div class="oneBlock">
-                <img src="img/girl.jpg" class="newsPic">
+                    <picture>
+                            <source srcset="img/girlMobile.jpg" media="(max-width: 300px)" style="max-width:70px;">
+                            <img src="img/girl.jpg" class="newsPic">
+                          </picture>
                 <p class="month">Jun</p>
                 <p class="newsTitle">Nemo enim ipsam voluptatem quia voluptas sit </p>
-            </div>          
+            </div>         
 
             <div class="oneBlock">
-                <img src="img/nature.jpg" class="newsPic">
+                    <picture>
+                            <source srcset="img/mountainMobile.jpg" media="(max-width: 300px)">
+                            <img src="img/nature.jpg" class="newsPic">
+                          </picture>
                 <p class="month">September</p>
                 <p class="newsTitle">Neque porro quisquam est, qui dolorem ipsum quia dolor.</p>
             </div>          

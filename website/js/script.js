@@ -1,3 +1,5 @@
+
+
 var slide = 1;
 showSlides(slide);
 
@@ -26,3 +28,4 @@ function toggle() {
       x.className = "navigation";
     }
   }
+
