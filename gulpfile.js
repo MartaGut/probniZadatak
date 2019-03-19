@@ -2,8 +2,9 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var imgOpt = require('gulp-imagemin');
-minifycss = require('gulp-minify-css'),
-uglifycss = require('gulp-uglify-css'),
+minifycss = require('gulp-minify-css');
+uglifycss = require('gulp-uglify-css');
+
 
 
 gulp.task('sass', function(){
@@ -11,7 +12,6 @@ gulp.task('sass', function(){
     .pipe(sass(''))
     .pipe(gulp.dest('website/css'))
 });
-
 gulp.task('uglifycss', function(){
     return gulp.src('website/css/style.scss')
     .pipe(uglifycss(''))
@@ -30,6 +30,14 @@ gulp.task('uglify', function(){
     .pipe(gulp.dest('minjs'))
 });
 
+gulp.task('run', ['sass', 'uglifycss'])
+
 gulp.task('watch', function(){
-   return gulp.watch('website/js/script.js', ['uglify'])
+   return gulp.watch('website/js/script.js', ['uglify']);
+   return gulp.watch('website/css/style.scss', ['sass']);
 });
+
+gulp.task('default', ['run', 'watch'])
+
+
+

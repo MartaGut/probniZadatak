@@ -1,0 +1,258 @@
+
+body{
+    margin: 0px;
+    background-color: $background;
+}
+*{
+    box-sizing: border-box;
+}
+nav{
+    margin-bottom: 0px;
+    padding: 60px 170px;
+}
+.navigation {
+    padding-bottom: 20px;
+}
+#logo {
+    width: 200px;
+    float: left;
+    margin-top: -30px;
+}
+a.navLink{
+    float: right;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 40px;
+    cursor: pointer;
+    font-family: museosans700;
+    font-size: 15px;
+}
+.navigation a {
+    display: block;
+}
+.navigation a.hamburger{ 
+    display: none;
+}
+a.navLink:hover{
+    color: gray;
+    border-bottom: 5px solid gray;
+    cursor: pointer;
+}
+a.active{
+    border-bottom: 5px solid #0050ff;
+}
+header{
+    margin: 0px;
+    background-image: url("../img/desktopHero.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 860px;
+    background-position: center;
+    position: relative;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.headerText{
+    color: $background;
+    font-family: museosans100;
+    font-size: 40px;
+    line-height: 60px;
+    
+}
+.signUp{
+    background-color: $blueButton;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    color: $background;
+    transition: 0.5s;
+    font-family: museosans700;
+}
+.signUp:hover{
+    background-color: $background;
+    color: $blueButton;
+    cursor: pointer;
+}
+.content, .news{
+    padding: 80px 170px;
+    font-family: museosans300;
+}
+.pageHeading{
+    font-size: 40px;
+}
+.content a{
+    text-decoration: none;
+    color:  $blueButton;
+    cursor: pointer;
+}
+.list{
+    list-style-type: circle;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+.list li{
+    padding: 10px;
+}
+.slide{
+    position: relative;
+}
+.next, .previous{
+    position: absolute;
+    top: 50%;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s ease;
+    width: 60px;
+    height: 60px;
+}
+.previous{
+    left: 170px;
+}
+.next:hover, .previous:hover{
+    width: 70px;
+    height: 70px;
+}
+
+.next{
+    right: 170px;
+}
+.slideText{
+    text-align: center;
+    padding: 300px 380px;
+    height: 800px;
+    font-family: museosans300;
+    font-size: 15px;
+    color: $background;
+    line-height: 30px;
+}
+.slideText h1{
+    font-family: museosans100;
+    font-size: 40px;
+    line-height: 60px;
+
+}
+.contactUs{
+    margin-top: 40px;
+    background-color: #0050ff;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    color: $background;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contactUs:hover{
+    padding: 15px;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+.news h1{
+    font-family: museosans100;
+}
+.oneBlock{
+    float: left;
+    width: 33%;
+    padding: 10px;
+    font-family: museosans300;
+    transition: 0.5s;
+}
+.oneBlock:hover{
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    box-shadow: 5px 10px 8px #888888;
+    cursor: pointer;
+}
+.newsPic{
+    width: 100%;
+}
+.blocks::after{
+    content: "";
+   clear: both;
+   display: table;
+}
+.seeAll{
+    margin-top: 150px;
+    background-color: $background;
+    border: 2px solid #0050ff;
+    padding: 10px;
+    border-radius: 30px;
+    color: #0050ff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.seeAll:hover{
+    color: $background;
+    background-color: #0050ff;
+}
+.month{
+    color: #5a6373;
+    font-size: 15px;
+}
+.newsTitle{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+footer{ 
+    padding: 20px 170px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #e6e6e6;
+    padding-top: 40px;
+}
+.copyright{
+    float: left;
+    font-size: 12px;
+}
+.copyright a{
+    color: blue;
+}
+.mediaButt{
+    float: right;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+.mediaButt img{
+    width: 15px;
+    height: 15px;
+    transition: 0.5s;
+}
+.mediaButt img:hover{
+    width: 17px;
+    height: 17px;
+}
+@media (max-width:950px){
+    nav{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
