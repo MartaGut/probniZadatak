@@ -16,3 +16,13 @@ function showSlides(n){
     slides[slide-1].style.display = "block"
 
 }
+
+
+function toggle() {
+    var x = document.getElementById("hamburgNav");
+    if (x.className === "navigation") {
+      x.className += " responsive";
+    } else {
+      x.className = "navigation";
+    }
+  }

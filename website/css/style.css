@@ -27,10 +27,9 @@ body {
 
 nav {
   margin-bottom: 0px;
-  padding: 46px 170px; }
+  padding: 60px 170px; }
 
-ul.navigation {
-  list-style-type: none;
+.navigation {
   padding-bottom: 20px; }
 
 #logo {
@@ -48,6 +47,9 @@ a.navLink {
   cursor: pointer;
   font-family: museosans700;
   font-size: 15px; }
+
+a.hamburger {
+  display: none; }
 
 a.navLink:hover {
   color: gray;
@@ -230,13 +232,10 @@ a {
   text-decoration: none; }
 
 footer {
-  padding: 0 170px;
+  padding: 20px 170px;
   background-color: #f7f7f7;
-  border-top: 1px solid #e6e6e6; }
-
-ul.foot {
-  list-style-type: none;
-  padding-bottom: 20px; }
+  border-top: 1px solid #e6e6e6;
+  padding-top: 40px; }
 
 .copyright {
   float: left;
@@ -245,7 +244,7 @@ ul.foot {
 .copyright a {
   color: blue; }
 
-li.mediaButt {
+.mediaButt {
   float: right;
   display: block;
   padding: 10px;
@@ -262,3 +261,30 @@ li.mediaButt {
 .mediaButt img:hover {
   width: 17px;
   height: 17px; }
+
+@media (max-width: 750px) {
+  .navigation a.hamburger {
+    float: right;
+    display: block; }
+  .navigation.responsive {
+    position: relative; }
+  .navigation.responsive a.hamburger {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .navigation.responsive a {
+    float: none;
+    display: block;
+    text-align: left; }
+  a.navLink {
+    display: none; }
+  a.hamburger {
+    display: block;
+    width: 40px; }
+  nav {
+    padding: 20px;
+    overflow: hidden; }
+  #logo {
+    margin-top: 0px; }
+  a.navLink:hover {
+    border-bottom: none; } }

@@ -14,13 +14,14 @@
 
 <body>
   <nav>
-      <ul class="navigation">
-          <li><a href=#><img id="logo" src="img/logo.jpg" alt="Logo" ></a></li>      
-          <li><a href=# class="navLink">Contact</a></li>
-          <li><a href=# class="navLink">Pricing</a></li>
-          <li><a href=# class="navLink">About</a></li>
-          <li><a href=# class="navLink active">What we do</a></li>
-      </ul>
+      <div class="navigation" id="hamburgNav">
+          <a href=#><img id="logo" src="img/logo.jpg" alt="Logo" ></a>      
+          <a href=# class="navLink">Contact</a>
+          <a href=# class="navLink">Pricing</a>
+          <a href=# class="navLink">About</a>
+          <a href=# class="navLink active">What we do</a>
+          <a href=# class="navLink hamburger" onclick="toggle()"><img class="hamburgerImg" src="img/hamburger.gif" alt="Menu Button" ></a>
+      </div>
   </nav>
 
 
@@ -129,14 +130,11 @@
   <div class="line"></div>
 
   <footer>
-        <ul class="foot">
-             <li class="copyright">© Copyright <a href=#>Terms + Privacy</a></li>
-             <li class="mediaButt"><a href=#><img src="img/youtubeIcon.jpg" alt="Youtube Icon"></a></li>
-             <li class="mediaButt"><a href=#><img src="img/twitterIcon.jpg" alt="Twitter Icon"></a></li>
-             <li class="mediaButt"><a href=#><img src="img/facebookIcon.jpg" alt="Facebook Icon"></a></li>
+             <span class="copyright">© Copyright <a href=#>Terms + Privacy</a></span>
+             <a href=# class="mediaButt"><img src="img/youtubeIcon.jpg"  alt="Youtube Icon"></a>
+             <a href=# class="mediaButt"><img src="img/twitterIcon.jpg"  alt="Twitter Icon"></a>
+             <a href=# class="mediaButt"><img src="img/facebookIcon.jpg"  alt="Facebook Icon"></a>
              
-             
-        </ul>
   </footer>
 
 
