@@ -1,7 +1,9 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
-var imgOpt = require('gulp-imagemin')
+var imgOpt = require('gulp-imagemin');
+minifycss = require('gulp-minify-css'),
+uglifycss = require('gulp-uglify-css'),
 
 
 gulp.task('sass', function(){
@@ -10,9 +12,10 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('website/css'))
 });
 
-gulp.task('styleugly', function(){
-    return gulp.src('website/scss/style.scss')
-    .pipe()
+gulp.task('uglifycss', function(){
+    return gulp.src('website/css/style.scss')
+    .pipe(uglifycss(''))
+    .pipe(gulp.dest('website/css'))
 })
 
 gulp.task('imgOpt', function(){
